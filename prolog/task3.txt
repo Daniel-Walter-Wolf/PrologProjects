@@ -1,0 +1,32 @@
+1.
+(a) ?- magic(house_elf).
+
+False
+
+
+
+(b) ?- wizard(harry).
+
+False
+
+
+
+(c) ?- magic(wizard).
+
+False
+
+(d) ?- magic(’McGonagall’).
+
+%Should be true but the second magic :- wizard clause is blocking it.
+
+True
+
+
+
+(e) ?- magic(Hermione).
+
+Hermione = dobby ;
+Hermione = hermione ;
+Hermione = 'McGonagall' ;
+Hermione = rita_skeeter
+
